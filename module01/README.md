@@ -33,3 +33,17 @@ Sum([]int{4, 2, 22, -10, 8})        // 26
 Sum(nil)        // 0
 Sum([]int{})    // 0
 ```
+
+## 03. Reverse a string [code]
+
+Source file: `reverse.go`
+Function def: `Reverse(word string) string`
+
+Given a string, return its reverse.
+
+Ex
+
+```go
+Reverse("cat")      // tac
+Reverse("alphabet") // tebahpla
+```
