@@ -123,3 +123,23 @@ Each digit gets multiplied by the base raise to a power, e.g. for 1110 in base 2
 
 So this is: 1*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 8 + 4 + 2 + 0 = 14
 ```
+
+charset = "0123456789ABCDEF"
+value = "1110"
+base = 2
+power = 0
+get "0"'s index charset = 0
+res = res + 0*base^power
+
+## 07. Any base to any base [code]
+
+Source file: `base_to_base.go`
+Function def: `BaseToBase(value string, base, newBase int) string`
+
+Break it into smaller problems we have already solved!
+
+Ex:
+```go
+BaseToBase("E", 16, 2) // "1110"
+BaseToBase("8831A383B", 12, 16) // "DEADBEEF"
+```
