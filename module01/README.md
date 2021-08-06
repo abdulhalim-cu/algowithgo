@@ -106,3 +106,20 @@ Step 1: 15 % 16 = 15, so next digit is "F"
 Step 2: 15 / 16 = 0. Stop!
 Final new number: "F"
 ```
+
+## 06. Base to Decimal [Code]
+
+Source file: `base_to_dec.go`
+Function def: `BaseToDec(value string, base int) int`
+
+Each digit gets multiplied by the base raise to a power, e.g. for 1110 in base 2:
+
+```
+1       2       3
+10^2    10^1    10^0
+
+1       1       1       0
+2^3     2^2     2^1     2^0
+
+So this is: 1*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 8 + 4 + 2 + 0 = 14
+```
